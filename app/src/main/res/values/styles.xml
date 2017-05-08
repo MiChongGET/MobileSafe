@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyToolBar" parent="AppTheme.Base">
+    </style>
+    <style name="AppTheme.Base" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <item name="android:shadowColor">@color/colorAccent</item>
+    </style>
+
+
+    <style name="MyToolBar2" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textColorSecondary">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+    <style name="text_content_style">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="button_next_style">
+        <item name="android:onClick">next</item>
+        <item name="android:drawableRight">@drawable/next</item>
+        <item name="android:background">@drawable/button_other</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:text">下一步</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="button_pre_style">
+        <item name="android:onClick">pre</item>
+        <item name="android:drawableLeft">@drawable/previous</item>
+        <item name="android:background">@drawable/button_other</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:text">上一步</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <!--讯飞-->
+    <style name="textStyle">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="splashTheme" parent="AppTheme">
+        <!--//设置启动页面的主题  给preview window设置背景 避免的在应用启动的时候黑屏或是白屏现象-->
+        <!--最好使用xml的图片-->
+        <item name="android:windowBackground">@drawable/welcome</item>
+    </style>
+
+</resources>

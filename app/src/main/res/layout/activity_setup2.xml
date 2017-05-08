@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.buildworld.com.mobilesafe.activity.fangdao.Setup2Activity"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar"
+        />
+
+
+    <TextView
+        style="@style/text_content_style"
+        android:text="通过绑定sim:" />
+
+    <TextView
+        style="@style/text_content_style"
+        android:text="下次重启手机如果发现sim变化\n就会发送报警短信" />
+
+    <FrameLayout
+
+        android:id="@+id/sim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_online" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/presence_invisible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bind" />
+
+
+        <Button
+            style="@style/button_pre_style"
+            android:layout_width="150dp"
+            android:layout_height="120dp" />
+
+        <Button
+            style="@style/button_next_style"
+            android:layout_width="150dp"
+            android:layout_height="120dp" />
+    </RelativeLayout>
+
+</LinearLayout>

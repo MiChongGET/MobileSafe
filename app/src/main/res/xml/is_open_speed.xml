@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="is_open_speed"
+        android:title="语音识别是否开启"
+        android:summaryOn="语音识别开启"
+        android:summaryOff="语音识别关闭"
+        />
+</PreferenceScreen>

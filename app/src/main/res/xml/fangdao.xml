@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="is_fangdao"
+        android:title="手机防盗开启"
+        android:summaryOn="手机防盗已经开启"
+        android:summaryOff="手机防盗未开启"
+        />
+</PreferenceScreen>

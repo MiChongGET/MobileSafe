@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.buildworld.com.mobilesafe.fragment.SettingsFragment">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <FrameLayout
+        android:id="@+id/preferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    </FrameLayout>
+    <Button
+        android:id="@+id/addres_backgroud"
+        android:layout_below="@+id/preferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="设置号码归属地背景"
+        android:onClick="AddresBackgroud"/>
+
+    <Button
+        android:id="@+id/setSpeed"
+        android:text="设置语音"
+        android:layout_below="@+id/addres_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="setSpeed"/>
+
+</RelativeLayout>

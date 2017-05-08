@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.buildworld.com.mobilesafe.activity.HomeActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+       >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="功能界面"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:gravity="center_horizontal"
+            />
+    </android.support.v7.widget.Toolbar>
+    
+    
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:id="@+id/linearLayout">
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/zhuyi"
+            android:layout_gravity="center"/>
+        <cn.buildworld.com.mobilesafe.ui.FocusedTextView
+            android:paddingTop="5dp"
+            android:background="@drawable/home_show_bar"
+            android:text="淮南师范学院E8网络工作室  淮南师范学院E8网络工作室  淮南师范学院E8网络工作室"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <GridView
+        android:paddingTop="20dp"
+        android:id="@+id/list_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        android:horizontalSpacing="10dp"
+        android:layout_below="@+id/linearLayout" />
+    <ImageView
+        android:layout_below="@+id/list_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/michong"
+        />
+</RelativeLayout>

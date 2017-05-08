@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cn.buildworld.com.mobilesafe.activity.Settings.SetSpeed">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/include3" />
+
+    <FrameLayout
+        android:layout_below="@+id/include3"
+        android:id="@+id/control_speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </FrameLayout>
+
+
+    <Button
+        android:text="注册"
+        android:id="@+id/isv_register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/control_speed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp"
+        android:onClick="register"/>
+
+    <Button
+        android:text="删除"
+        android:onClick="delete"
+        android:id="@+id/isv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isv_register1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="验证"
+        android:onClick="verify"
+        android:id="@+id/isv_verify1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/isv_delete"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+
+    <!--显示验证情况界面-->
+    <LinearLayout
+        android:id="@+id/showText"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/isv_verify1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/showPwd"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/showMsg"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/showRegFbk"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/recordTime"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:key="is_sim"
+        android:title="点击绑定SIM卡"
+        android:summaryOn="SIM卡已经绑定"
+        android:summaryOff="SIM卡未绑定"
+
+        />
+</PreferenceScreen>

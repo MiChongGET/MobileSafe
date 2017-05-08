@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="versionurl">
+        http://192.168.7.235/mobilesafe/updateinfo.html
+    </string>
+</resources>
